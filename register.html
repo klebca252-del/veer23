@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register - Bellubbi College</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(to right,#a6e9ee,#d4f7fa);
+}
+
+/* Header */
+header{
+    background: linear-gradient(45deg,#004aad,#007bff);
+    padding:20px 0;
+    text-align:center;
+    color:white;
+}
+
+/* Event Bar */
+.event-bar{
+    background:#ffcc00;
+    padding:10px;
+    font-weight:bold;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:center;
+    background:#002b5c;
+}
+
+nav a{
+    color:white;
+    padding:15px 25px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#007bff;
+}
+
+/* Section */
+section{
+    padding:50px 20px;
+    text-align:center;
+}
+
+h2{
+    color:#004aad;
+    margin-bottom:30px;
+}
+
+/* Form Design */
+form{
+    background:white;
+    max-width:600px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    text-align:left;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+label{
+    font-weight:bold;
+    display:block;
+    margin-bottom:5px;
+    color:#004aad;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+textarea{
+    resize:none;
+}
+
+.gender{
+    display:flex;
+    gap:15px;
+    margin-top:5px;
+}
+
+button{
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:12px;
+    width:100%;
+    border-radius:25px;
+    font-size:16px;
+    margin-top:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#007bff;
+}
+
+/* Footer */
+footer{
+    background:#002b5c;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Bellubbi College</h1>
+<p>Empowering Students for a Better Tomorrow</p>
+</header>
+
+<div class="event-bar">
+📢 Admissions Open for 2026 | 🎉 Annual Fest on March 26 | 🏆 Sports Day on April 10 | 📚 Scholarship Applications Available Now
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="course.html">Courses</a>
+<a href="gallery.html">Gallery</a>
+<a href="register.html">Register</a>
+</nav>
+
+<section>
+<h2>Student Registration Form</h2>
+
+<form onsubmit="return submitForm()">
+
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>Email Address</label>
+<input type="email" required>
+</div>
+
+<div class="form-group">
+<label>Phone Number</label>
+<input type="tel" required>
+</div>
+
+<div class="form-group">
+<label>Date of Birth</label>
+<input type="date" required>
+</div>
+
+<div class="form-group">
+<label>Gender</label>
+<div class="gender">
+<label><input type="radio" name="gender" required> Male</label>
+<label><input type="radio" name="gender"> Female</label>
+<label><input type="radio" name="gender"> Other</label>
+</div>
+</div>
+
+<div class="form-group">
+<label>Address</label>
+<textarea rows="3" required></textarea>
+</div>
+
+<div class="form-group">
+<label>Previous Qualification</label>
+<input type="text" placeholder="PUC / 12th / Diploma" required>
+</div>
+
+<div class="form-group">
+<label>Percentage / CGPA</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>Select Course</label>
+<select required>
+<option value="">Select Course</option>
+<option>Bachelor of Computer Application</option>
+<option>Bachelor of Commerce</option>
+<option>Bachelor of Arts</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Upload Photo</label>
+<input type="file" required>
+</div>
+
+<button type="submit">Submit Application</button>
+
+</form>
+</section>
+
+<footer>
+<p>© Bellubbi College | All Rights Reserved</p>
+</footer>
+
+<script>
+function submitForm(){
+alert("🎉 Registration Submitted Successfully!");
+return false;
+}
+</script>
+
+</body>
+</html>
